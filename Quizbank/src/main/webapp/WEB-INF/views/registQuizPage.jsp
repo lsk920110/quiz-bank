@@ -84,8 +84,8 @@ $('input[value="save"]').click(function(){
 	
 	$.ajax({
 		url : 'registQuiz',
-		data : JSON.stringify(params),
 		type : 'post',
+		data : JSON.stringify(params),
 		contentType: "application/json; charset=utf-8",
 		dataType : 'json',
 		success : function(data){

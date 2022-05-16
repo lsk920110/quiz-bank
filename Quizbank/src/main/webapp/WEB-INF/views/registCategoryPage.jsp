@@ -14,7 +14,7 @@
 <body>
 	<div>
 		시험종류등록<br/>
-		<select></select><br/>
+		<select id=""></select><br/>
 		<input type="text" id="testCateSaveText"/>
 		<input type="button" value="저장" id="testCateSaveBtn"/>
 		
@@ -45,22 +45,30 @@
 
 <script>
 $('#testCateSaveBtn').click(function(){
-	$testCateSaveBtn = $('#testCateSaveBtn').val();
+	$testCateSaveText = $('#testCateSaveText').val();
 	 
 	params = {
-		'test_category' : $testCateSaveBtn
+		'test_category' : $testCateSaveText
 	}
 	$.ajax({
-		url : '',
-		type : '',
-		data : '',
-		dataType : '',
+		url : 'registTestCategory',
+		type : 'post',
+		data : JSON.stringify(params),
+		dataType : 'json',
 		contentType : 'application/json; charset=UTF-8',
 		success : function(data){console.log(data);},
 		error : function(e){console.log(e);}		
 	});
 	
 });
+
+$('')
+
+
+
+
+
+
 </script>
 
 </body>

@@ -37,12 +37,12 @@
 		(
 		TEST_CATEGORY ,
 		USE_YN ,
-		PASS_CRITERIA ,		
+		PASS_CRITERIA
 		)
 	VALUES
 		(
 		#{test_category} , 
-		#{use_yn} ,
+		'Y' ,
 		#{pass_criteria}		
 		)
 	</insert>

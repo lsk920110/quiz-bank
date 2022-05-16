@@ -73,7 +73,7 @@ public class HomeController {
 		homeService.registTestCategory(params);
 		
 		
-		return null;
+		return new ResultVO("등록성공");
 	}
 	
 }
